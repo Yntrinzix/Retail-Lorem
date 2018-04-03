@@ -1,0 +1,200 @@
+$lightColor1: #f8f8f8
+$lightColor2: #fff
+$greyLightColor: #eee
+$darkColor1: #222
+$darkColor2: #000
+$orangeColor: #FFC000
+$redColor: #ea0037
+
+.orange 
+    color: $orangeColor
+b
+    font-family: kylets
+    font-size: 70px
+    
+    +md 
+        font-size: 42px
+    +sm 
+        font-size: 50px
+=topLeft($t,$l)
+    top: $t
+    left: $l 
+
+=arrows
+    position: absolute
+    top: 50%
+    width: 1em
+    height: 1em
+    +translate(0px, -50%)
+    cursor: pointer
+    padding: 14px
+    border-radius: 50%
+    opacity: .5
+=transitionHead($t)
+    -webkit-transition: all $t ease
+    -o-transition: all $t ease
+    transition: opacity $t ease
+
+
+.carousel
+    width: 100%
+    height: 40vw
+    overflow: hidden
+    position: relative
+    background: #333
+    color: #555
+    +md 
+        height: 60vw
+    +sm 
+        height: 157vw
+    &-div
+        opacity: 0
+        +transitionHead(3s)
+
+    &-title 
+        width: 350px
+        position: absolute
+        font-family: cd
+        font-size: 17px
+        border-left: 5px solid $orangeColor
+        +md
+            font-size: 14px
+            width: 200px
+        +sm
+            width: 180px
+            font-size: 15px
+            text-align: left
+        z-index: 8
+        padding: 1vw
+        +transition
+        cursor: pointer
+        text-align: justify
+        &-button
+            position: absolute
+
+        &-dark
+            color: $darkColor1
+        &-dark2
+            color: #666
+        &-light
+            color: $lightColor1
+        &-orange
+            color: $orangeColor
+        &-left 
+            +md 
+                top: 46%
+            +sm
+                +translate(50%, -50%)
+                top: 50%
+            +translate(50%, -50%) 
+            top: 32%
+        &-center
+            
+            +sm 
+                +translate(50%, -50%)
+                top: 50% 
+            +translate(100%, -50%) 
+            top: 32% 
+        &-right
+            +md 
+                +translate(58vw, 60%) 
+            +sm 
+                +translate(50%, -50%)
+                top: 50%
+            +translate(57vw, 35%) 
+    &-screen
+            position: absolute
+            +topLeft(0, 0)
+            width: 100%
+            height: 100%
+            opacity: 0.07
+            z-index: 8
+            pointer-events: none
+            background-image: url('../img/carousel/screen.jpg')
+    &-logo
+        z-index: 0
+        position: absolute
+        font-family: kylets
+        font-size: 5vw
+        top: 50%
+        +translate(45vw, -50%) 
+    &-img 
+        +transitionHead(3s)
+        position: relative
+        width: 100%
+        
+    &-inner
+        display: flex
+        position: absolute
+        +transitionHead(1s)
+        
+        div
+            
+            // width: 100vw
+    &-button
+        
+        &-next
+            &:hover 
+                &::after
+                    background: #000
+                    opacity: 1
+            &::after
+                +transition
+                content: url('../img/carousel/nxt.svg')
+                right: 4px
+                background: #333
+                +arrows
+                
+                
+        &-prev
+            &:hover 
+                &::after
+                    background: #000
+                    opacity: 1
+            &::after   
+                +transition
+                background: #333
+                content: url('../img/carousel/prev.svg') 
+                left: 4px  
+                +arrows
+                &:hover 
+                    background: $darkColor2
+=pic 
+    background-size: cover
+    height: 60vw
+    +sm 
+        height: 157vw
+
+.pic1
+    background-image: url('../img/carousel/2.jpg')
+    +pic
+    +sm 
+        background-image: url('../img/carousel/sm2.jpg')
+
+
+.pic2
+    background-image: url('../img/carousel/3.jpg')
+    +pic
+    +sm 
+        background-image: url('../img/carousel/sm3.jpg')
+
+.pic3
+    background-image: url('../img/carousel/1.jpg')
+    +pic
+    +sm 
+        background-image: url('../img/carousel/sm1.jpg')
+
+.pic4
+    background-image: url('../img/carousel/4.jpg')
+    +pic
+    +sm 
+        background-image: url('../img/carousel/sm4.jpg')
+
+.test
+    +transition
+    border-radius: 50%
+    padding: 10px
+    border: 10px solid #fff
+    z-index: 999999999
+    &:hover 
+        border: 10px dashed #fff

@@ -1,0 +1,50 @@
+footer
+    width: 100%
+    background: $darkColor1
+    color: $lightColor1
+    padding: 26px 0px 10px 0px
+    position: fixed
+    bottom: 0
+    z-index: -1
+
+.footer
+    &-list 
+        width: 33%
+    &-alias 
+        width: 100%
+        height: 0px
+        margin-bottom: 145px
+        pointer-events: none
+        +md 
+            margin-bottom: 194px
+    &-title 
+        font-size: 15px
+        font-family: kylets
+    &-social
+        font-size: 22px
+        div
+            +transition
+            padding: 10px
+            color: #888
+            cursor: pointer
+            +md 
+                width: 7%
+            &:hover
+                color: $greyLightColor
+                +translate(1px,0px)
+                
+    &-contents 
+        &-remove
+            +md 
+                display: none
+        font-size: 11px
+        padding: 10px 0px 10px 0px
+        div
+            +transition
+            padding: 3px
+            color: #888
+            cursor: pointer
+            &:hover
+                color: $greyLightColor
+                +translate(3px,0px)
+                

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lorem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/favicon.png">
+<link rel="stylesheet" href="sass/style1.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+</head>
+
+<body>
+   
+    <header id='head' class='border-bottom border--colorLight'>
+        <nav class='content content--width itemFlex'>
+            <div id='brand'>
+                <div id='logo' onclick="idScroll('head')">Lorem</div>
+                <!--<div id='logosub'>Shirts Jackets and hats</div>-->
+            </div>
+            <div class='menu'>
+                <div class='menu-large'>
+                    <ul class='flex  nospaces'>
+                        <li class='links pointer' onclick="idScroll('latest')">LATEST</li>
+                        <li class='links pointer' onclick="idScroll('shop')">SHOPS</li>
+                        <li class='links pointer' onclick="idScroll('contact')">CONTACT</li>
+                        <li class='links pointer'>MEN</li>
+                        <li class='links pointer'>WOMEN</li>
+                        <li class='links pointer'>KIDS</li>
+                    </ul>
+                </div>
+                <div class='menu-small'>
+                    
+                    <div id='hambg' onclick="mobileMenu()" class='hamburger hamburger-off'>
+                        <div class='line top'></div>
+                        <div class='line mid'></div>
+                        <div class='line bot'></div>
+
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </nav>
+    <div class='horizontalScroll'></div>
+    </header>
+    
+    <div class='headerAlias'>
+    </div>
+    <!--<section class='intro'> 
+        <div class='content-5 li1'></div><div class='content-5 li2'></div><div class='content-5 li1'></div>
+        <div class='content-5 li2'></div><div class='content-5 li1'></div><div class='content-5 li2'></div>
+        <div class='content-5 li1'></div><div class='content-5 li2'></div><div class='content-5 li1'></div>
+        <div class='content-5 li2'></div><div class='content-5 li1'></div><div class='content-5 li2'></div>
+        <div class='content-5 li1'></div><div class='content-5 li2'></div><div class='content-5 li1'></div>
+        <div class='content-5 li2'></div><div class='content-5 li1'></div><div class='content-5 li2'></div>
+        <div class='content-5 li1'></div><div class='content-5 li2'></div>
+    </section>-->
+    <div id='menu' class='flex mobile-menu mobile-menu-off'>
+        <ul class='flex mobile-contents'>
+            <li class='links pointer' onclick="idScroll('latest')">Latest</li>
+            <li class='links pointer' onclick="idScroll('shop')">Shops</li>
+            <li class='links pointer' onclick="idScroll('contact')">Contact</li>
+            <li class='links pointer'>Men</li>
+            <li class='links pointer'>Women</li>
+            <li class='links pointer'>Kids</li>
+        </ul>
+    </div>
+    <!-- Contents ------------------------------------------- -->
+
+    <section class='section-grey'>
+        <div class='title'>
+            <div class='content--width '>The Lorem Culture Explosion</div>
+        </div>
+        <div class='carousel'>
+            <div class='carousel-screen'></div>
+            
+            <div class='carousel-inner'>
+                <div class='carousel-div'>
+                    <p class='carousel-title carousel-title-left carousel-title-dark '>
+                        Designed for <br/><b class='carousel-title-dark'>You</b>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div class='carousel-img pic1'></div>
+                </div>
+                <div class='carousel-div'>
+                    <p class='carousel-title carousel-title-left carousel-title-light'>
+                        Latest <br/><b class='carousel-title-light'>Trend</b>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                         
+                    </p>
+                    <div class='carousel-img pic2'></div>
+                </div>
+                <div class='carousel-div'>
+                    <p class='carousel-title carousel-title-left carousel-title-light'>
+                        Discover your <br/><b class='carousel-title-light'>Passion</b>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div class='carousel-img pic3'></div>
+                </div>
+                <div class='carousel-div'>
+                    <p class=' carousel-title carousel-title-left carousel-title-light'>
+                        Experience <br/><b class='carousel-title-light'>Elegance</b>
+                        <br/>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <div class='carousel-img pic4'></div>
+                </div>
+            </div>
+            <div class='carousel-dots'></div>
+            <div class='carousel-button carousel-button-prev'></div>
+            <div class='carousel-button carousel-button-next'></div>
+        </div>
+    </section>
+    <section class='section-grey'><!-- ---------------------------------------------- --> <!-- ---------------------------------------------- -->
+
+
+
+        <div class='content content--width flex '>
+
+            <div class='content-50 overflowHidden'>
+                
+                <p class='feature-title'>Black is Back</p>
+                <div class='animate animate1-off'>
+                    <p class='feature-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class='feature-button'>Shop</div>
+                </div>
+            </div>
+            <div class='content-50 overflowHidden'>
+                <img class='transition' src='img/fashion1.png'>
+            </div>
+        </div>
+        <div class='content content--width flex-inverse'>
+             <div class='content-50 overflowHidden'>
+                <img class='transition' src='img/fashion2.png'>
+            </div>
+
+            <div class='content-50'>
+                <p class='feature-title'>Hip Choices</p>
+                <div class='animate animate1-off'>
+                    <p class='feature-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class='feature-button'>Shop</div>
+                </div>
+            </div>
+           
+        </div>
+        <div class='content content--width flex'>
+
+            <div class='content-50'>
+                <p class='feature-title'>Trendy Styles</p>
+                <div class='animate animate1-off'>
+                    <p class='feature-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class='feature-button'>Shop</div>
+                </div>
+            </div>
+            <div class='content-50 overflowHidden'>
+                <img class='transition' src='img/fashion3.png'>
+            </div>
+        </div>
+        <div class='content content--width flex-inverse'>
+             <div class='content-50 overflowHidden'>
+                <img class='transition' src='img/fashion4.png'>
+            </div>
+
+            <div class='content-50'>
+                <p class='feature-title'>Just Casual</p>
+                <div class='animate animate1-off'>
+                    <p class='feature-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class='feature-button'>Shop</div>
+                </div>
+            </div>
+           
+        </div>
+
+
+
+
+    </section> <!-- ---------------------------------------------- --> <!-- ---------------------------------------------- -->
+    <div class='title'>
+        <div id='latest' class='content--width '>Popular Collections</div>
+    </div>
+    <section class='section-white '>
+
+        <div class='content content--width flex'>
+
+            
+
+            <div class='content-50 feature relative'>
+                <img class='transition' src='img/fashion.jpg'>
+                <div class='imgContent'>
+                    <div class='imgContent-title'>Fall 
+                        &amp; Winter Collection</div><br>
+                    <div class='imgContent-text'>Lorem ipsum dolor sit amet, consectetur
+                         adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam.</div><br/>
+                    <div class='imgContent-button'>SHOP NOW</div>
+                </div>
+            </div>
+
+            <div class='content-50 overflowHidden'>
+                <div class='relative  feature relative'>
+                    <img class='transition' src='img/fashion2.jpg'>
+                    <div class='imgContent'>
+                        <div class='imgContent-title'>Luxurious Furs</div><br>
+                        <div class='imgContent-text'>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</div><br/>
+                        <div class='imgContent-button'>SHOP NOW</div>
+                    </div>
+                </div>
+                <div class='relative feature relative'>
+                    <img class='transition' src='img/fashion3.jpg'>
+                    <div class='imgContent'>
+                        <div class='imgContent-title'>Timeless Classics</div><br>
+                        <div class='imgContent-text'>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.</div><br/>
+                        <div class='imgContent-button'>SHOP NOW</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <section class='section-grey'>
+        <div id='shop' class='content content--width'>
+            <br/><b class='title-free'>Limitted Offer</b>
+            <div class='itemFlex'>
+                <div class='content-33'>
+                    <div class ='card'>
+                        <img class='transition' src='img/products/1.jpg'>
+                        <div class='card-normalFont'>2 Colours</div><hr/>
+                        <div class='card-Title'>The Insulator</div><br/>
+                        <div class='card-normalFont'>2018 Winter Collection</div><br/>
+                        <div class='card-normalFont'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div><hr/>
+                        <div class='card-Title'>$100.00</div><br/>
+                        <div class='feature-button'>Buy</div>
+                    </div>
+                </div>
+                <div class='content-33'>
+                    <div class ='card'>
+                        <img class='transition' src='img/products/2.jpg'>
+                        <div class='card-normalFont'>4 Colours</div><hr/>
+                        <div class='card-Title'>Rain Shield</div><br/>
+                        <div class='card-normalFont'>2018 Winter Collection</div><br/>
+                        <div class='card-normalFont'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div><hr/>
+                        <div class='card-Title'>$60.00</div><br/>
+                        <div class='feature-button'>Buy</div>
+                    </div>
+                </div>
+                <div class='content-33'>
+                    <div class ='card'>
+                        <img class='transition' src='img/products/3.jpg'>
+                        <div class='card-normalFont'>3 Colours</div><hr/>
+                        <div class='card-Title'>Snow Walker</div><br/>
+                        <div class='card-normalFont'>2018 Winter Collection</div><br/>
+                        <div class='card-normalFont'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div><hr/>
+                        <div class='card-Title'>$79.90</div><br/>
+                        <div class='feature-button'>Buy</div>
+                    </div>
+                </div>
+            
+                <div class='content-33'>
+                    <div class ='card'>
+                        <img class='transition' src='img/products/4.jpg'>
+                        <div class='card-normalFont'>2 Colours</div><hr/>
+                        <div class='card-Title'>Soldier</div><br/>
+                        <div class='card-normalFont'>2018 Winter Collection</div><br/>
+                        <div class='card-normalFont'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div><hr/>
+                        <div class='card-Title'>$100.00</div><br/>
+                        <div class='feature-button'>Buy</div>
+                    </div>
+                </div>
+                <div class='content-33'>
+                    <div class ='card'>
+                        <img class='transition' src='img/products/5.jpg'>
+                        <div class='card-normalFont'>4 Colours</div><hr/>
+                        <div class='card-Title'>Jungle</div><br/>
+                        <div class='card-normalFont'>2018 Winter Collection</div><br/>
+                        <div class='card-normalFont'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div><hr/>
+                        <div class='card-Title'>$60.00</div><br/>
+                        <div class='feature-button'>Buy</div>
+                    </div>
+                </div>
+                <div class='content-33'>
+                    <div class ='card'>
+                        <img class='transition' src='img/products/6.jpg'>
+                        <div class='card-normalFont'>3 Colours</div><hr/>
+                        <div class='card-Title'>Minx</div><br/>
+                        <div class='card-normalFont'>2018 Winter Collection</div><br/>
+                        <div class='card-normalFont'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </div><hr/>
+                        <div class='card-Title'>$79.90</div><br/>
+                        <div class='feature-button'>Buy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id='contact'  class='title'>
+        <div class='content--width '>Contact Us</div>
+    </div>
+    <section class='section-white'> 
+        <div class='content--width flex'>
+            <div class='content-50'>
+                <div class='contact-title'>Enquiry</div>
+                <form> 
+                    
+                    <input type='text' placeholder='Name'>
+                    <input type='email' placeholder='e-mail'>
+                    <input type='tel' placeholder='Phone'>
+                    <textarea placeholder='Your Message'></textarea>
+                    <button class='contact-button pointer' type='submit'><i class="fab fa-telegram-plane"></i> Send Message</button>
+                </form>
+            </div>
+            <div class='content-50'>
+                <div class='contact-title'>Contact Details</div>
+                <div class='contact-content'>
+                    <div class='contact'>
+                        <div class='contact-icon'><img src ='img/location.svg'/></div> 
+                        <div class='contact-details'>Glenfield Road, Glenfield, North Shore, Auckland, New Zealand</div>
+                    </div>
+                    <div class='contact'>
+                        <div class='contact-icon'><img src ='img/phone.svg'/></div> 
+                        <div class='contact-details'>0225733153</div>
+                    </div>
+                    <div class='contact'>
+                        <div class='contact-icon'><img src ='img/email.svg'/></div> 
+                        <div class='contact-details'>contact@lorem.com</div>
+                    </div>
+                    <div class='contact-message'> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section >
+
+    <div class='footer-alias'>
+    </div>
+    <!-- Contents End---------------------------------------- -->
+    <footer>
+        <div class='content content--width flex'>
+            <div class='content-50 itemFlex'>
+                <div class='footer-list'>
+                    <div class='footer-title'>About</div>
+                    <div class='footer-contents'>
+                        <div>The Lorem Group</div>
+                        <div>People</div>
+                        <div>Product</div>
+                        <div>Commitment</div>
+                    </div>
+                </div>
+                <div class='footer-list'>
+                    <div class='footer-title'>Shops</div>
+                    <div class='footer-contents'>
+                        <div>Auckland</div>
+                        <div>Wellington</div>
+                        <div>Christchurch</div>
+                    </div>
+                </div>
+                <div class='footer-list'>
+                    <div class='footer-title'>Help</div>
+                    <div class='footer-contents'>
+                        <div>Order Status</div>
+                        <div>Delivery</div>
+                        <div>Returns</div>
+                        <div>Payment</div>
+                    </div>
+                </div>
+            </div>
+            <div class='content-50 footer-title'>
+                <div class='footer-contents-remove'>Social</div>
+                <div class='footer-social itemFlex'>
+                    <div><i class="fab fa-facebook-f"></i></div>
+                    <div><i class="fab fa-twitter"></i></div>
+                    <div><i class="fab fa-instagram"></i></div>
+                    <div><i class="fab fa-pinterest"></i></div>
+                    <div><i class="fab fa-youtube"></i></div>
+                    <div><i class="fab fa-tumblr"></i></div>
+
+                </div>
+            </div>
+                
+            
+        </div>
+    </footer>
+    <script src='js/app.js'></script>
+    <script src='js/scrollTrigger.js'></script>
+
+</body>
+
+</html>

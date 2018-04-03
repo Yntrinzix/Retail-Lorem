@@ -1,0 +1,28 @@
+.animate1
+    &-off 
+        padding: 2px 0 0 0
+        +transition
+        opacity: 0.3
+        color: $orangeColor
+        +translate(0px, 30px)
+        border-top: 1px solid rgba(0,0,0,0) 
+        
+    &-on 
+        padding: 20px 0 0 0
+        +transition
+        opacity: 1
+        +translate(0px, 0px)
+        border-top: 1px solid $orangeColor 
+
+.animate2
+    &-off 
+        padding: 2px 0 0 0
+        +transition
+        opacity: 0.3
+        color: $orangeColor
+        +translate(0px, 30px)
+        border-top: 1px solid rgba(0,0,0,0) 
+        
+    &-on 
+        .feature
+            +liAnimator(14, cardAnimator, 300ms)   

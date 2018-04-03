@@ -1,0 +1,141 @@
+body
+    +transition
+    padding: 0px
+    margin: 0px
+    color: $darkColor1
+    font-family: cd
+    background: $darkColor1
+    overflow-x: hidden
+    
+section
+    width: 100%
+
+.pointer
+    cursor: pointer
+
+.padding
+    &LnR 
+        padding: 10px
+    &-light 
+        padding: 2px
+    &-normal
+        padding: 10px
+    &-heavy
+        padding: 15px
+
+.headerAlias
+    height: 89px
+    width: 100%
+    +md 
+        height: 73px
+
+ul 
+    list-style-type: none
+
+.title
+    background: $lightColor2
+    color: $darkColor2
+    font-size: 15px
+    font-family: kylets
+    padding: 10px 0 10px 0
+    width: 100%
+    &-free
+        font-size: 15px
+        font-family: kylets
+        +translate(0px, 10px)
+        color: $darkColor1
+
+* 
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+img
+    width: 100%
+    height: auto
+
+.transition
+    +transition
+
+.button
+
+    text-align: center
+
+.colorLight
+    color: $lightColor2
+
+.colorDark
+    color: #000
+
+.flex
+    +flex
+    +md 
+        flex-direction: column
+    &-inverse
+        +flex
+        +md 
+            flex-direction: column-reverse
+
+.overflowHidden 
+    overflow: hidden
+
+
+.relative
+    position: relative
+
+.border-bottom
+    border-bottom: 1px solid
+
+.border-top
+    border-top: 1px solid
+
+.border--colorLight
+    border-color: #e7e7e7
+
+.border--colorDark
+    border-color: $orangeColor
+
+
+::-webkit-scrollbar 
+    width: 3px
+    +transition
+
+
+::-webkit-scrollbar-track 
+    background: $darkColor1
+
+ 
+
+::-webkit-scrollbar-thumb 
+    background: $orangeColor
+
+=input 
+    +transition
+    outline: none
+    margin: 5px
+    padding: 3px
+    width: 90% 
+    font-family: cd
+    font-size: 15px
+    border: 1px solid #aaa
+    &:hover
+        border: 1px solid $orangeColor
+    &::placeholder
+        +transition
+        opacity: .3
+        color: $darkColor1
+    &:focus 
+        border: 1px solid $orangeColor
+        &::placeholder
+            opacity: .7
+form 
+    padding: 15px
+input 
+    +input
+textarea 
+    +input
+    resize: none
+    height: 150px
+    scrollbar-face-color: $darkColor1
+    &::focus
+        scrollbar-face-color: $orangeColor
+    

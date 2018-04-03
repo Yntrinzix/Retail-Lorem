@@ -1,0 +1,87 @@
+=buttonInImage($val1,$val2)
+    width: 40px
+    height: 40px
+    padding: .6%
+    background: $orangeColor
+    border-radius: 50%
+    color: $darkColor1
+    font-size: 9px
+    position: absolute
+    top: $val1
+    right: $val2
+    +xl
+        
+        
+        
+    +md
+        
+        
+        
+    +sm
+        
+        
+    &:hover
+        border-radius: 25%
+        
+
+=translate($x, $y)
+    -webkit-transform:  translate($x, $y)
+    -moz-transform:     translate($x, $y)
+    -ms-transform:      translate($x, $y)
+    transform:          translate($x, $y)
+
+=flex
+    display: -moz-flex
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    &--centerH
+        justify-content: center
+    &--absCenter
+        align-items: center
+        justify-content: center
+
+=itemflex
+    display: -moz-flex
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-wrap: wrap
+
+
+=transition
+    -webkit-transition: all .5s ease
+    -o-transition: all .5s ease
+    transition: all .5s ease
+
+=transition-fast
+    -webkit-transition: all .1s ease
+    -o-transition: all .1s ease
+    transition: all .1s ease
+
+=transform($transform)
+    -webkit-transform:  $transform
+    -moz-transform:     $transform
+    -ms-transform:      $transform
+    -o-transform:       $transform
+    transform:          $transform
+
+=liAnimator($childNo, $animator, $timing)
+    opacity: 0
+    @for $i from 1 through $childNo
+        &:nth-child(#{$i})
+            animation:
+                name: $animator
+                duration: $timing * $i
+                timing-function: ease-in-out
+                fill-mode: forwards
+
+=liAnimatorOff($childNo, $animator, $timing)
+    opacity: 1
+    @for $i from 1 through $childNo
+        &:nth-child(#{$i})
+            animation:
+                name: $animator
+                duration: $timing * $i
+                timing-function: ease-in-out
+                fill-mode: forwards

@@ -1,0 +1,240 @@
+.textInPic
+    position: absolute
+
+.moveLeft
+    +translate(3vw, 0px)
+.imgContent
+    +transition
+    border-top: 1px solid rgba(0,0,0,0) 
+    margin: 0 12.5%
+    padding: 10px
+    position: absolute
+    bottom: 5%
+    width: 70%
+    color: $lightColor2
+    font-size: 13px
+    +md
+        font-size: 15px
+    
+    &-text 
+        text-align: left
+  
+    &-title 
+        
+        font-family: kylets
+        font-size: 20px
+        +md
+            font-size: 18px
+        +sm 
+            font-size: 15px
+    &-button 
+        +transition
+        border: 1px solid $orangeColor
+        width: 36%
+        padding: 10px
+        text-align: center
+        cursor: pointer
+        +lg
+            padding: 5px
+            width: 33%
+        +sm
+            font-size: 11px
+        &:hover 
+            border: 1px solid $orangeColor 
+            background: $orangeColor 
+            color: $darkColor1
+            border-radius: 5px
+
+.card
+    +transition
+    padding: 15px  
+    margin: 15px
+    cursor: pointer
+    color: #555
+    border: 1px solid $lightColor1
+    &-normalFont
+        font-size: 12px
+        color: #999
+        +transition
+    &-Title 
+        font-size: 18px
+        font-family: kylets
+        +transition
+    &:hover
+        background: $lightColor1
+        color: $darkColor2
+        border: 1px solid $orangeColor
+.itemFlex
+    +itemflex
+.content
+    width: 100%
+    &-100
+        width: 100%
+    &-80
+        width: 80%
+    &-75
+        width: 75%
+    &-50
+        width: 50%
+        +md 
+            width: 100%
+    &-33
+        width: 33%
+        +md 
+            width: 50%
+        +sm 
+            width: 100%
+    &-25
+        width: 25%
+    &-20
+        width: 20%
+    &-6
+        width: 6.67%
+        background: $darkColor1
+    &-5
+        width: 5%
+    &--width
+        width: 60%
+        margin: 0 auto
+        +lg 
+            width: 98%
+        +xl
+            width: 85%
+    &-title 
+        font-size: 30px
+        font-family: kylets
+        text-align: center
+        &-sub
+            font-size: 15px
+            font-family: cd
+            text-align: center
+.feature
+    margin: 2px 2px 0px 0px
+    overflow: hidden
+    &-text 
+        font-family: cd 
+        font-size: 15px 
+        color: #666
+        text-align: justify
+        +sm 
+            font-size: 15px
+    &-title
+        font-family: kylets 
+        font-size: 50px 
+        +sm 
+            font-size: 40px
+    &-button
+        +transition
+        padding: 10px
+        background: $darkColor1
+        color: $lightColor2
+        
+        width: 40px
+        border-radius: 5px
+        cursor: pointer
+        text-align: center
+        font-size: 12px
+        &:hover 
+            background: $orangeColor
+            color: $darkColor1
+            border-radius: 10px
+        
+    img
+        transform: scale(1.1)
+    &:hover 
+        color: $darkColor1
+        img
+            border-radius: 15px
+            transform: scale(1.11)
+            opacity: .5
+        .imgContent 
+            border-top: 1px solid $darkColor1
+            color: $darkColor1
+            padding-top: 13px
+            padding-bottom: 13px
+            margin-top: 13px
+            margin-bottom: 13px
+            &-title 
+                color: $darkColor2
+            &-button 
+                border: 1px solid $darkColor1
+                background: $darkColor1 
+                color: $lightColor1
+                &:hover 
+                    border: 1px solid $orangeColor 
+                    background: $orangeColor 
+                    color: $darkColor1
+                    border-radius: 5px
+hr
+    border: 0
+    height: 1px
+    background-image: linear-gradient(to right, rgba(125, 125, 125, 0), rgba(125, 125, 125, 0.75), rgba(125, 125, 125, 0))
+
+.headerButton
+    font-size: .8vw
+    background: $darkColor1
+    text-align: center
+    padding: 15px
+    width: 10%
+    border-radius: 25px
+    font-family: Helvetica
+    +translate(90%,0px)
+    cursor: pointer
+    &:hover
+        background: #ffc000
+        color: $darkColor1 
+        border-radius: 50px    
+        font-size: .9vw
+
+.intro 
+    pointer-events: none
+    display: flex
+    height: 150vh
+    
+    position: fixed 
+    top: 0
+    z-index: 9
+    overflow: hidden
+    
+    .li1
+        +translate(0px, -800px)
+        +liAnimator(20, screen, 80ms)
+    .li2
+        +translate(0px, -800px)
+        +liAnimator(20, screen2, 80ms)
+
+.contact 
+    font-size: 16px
+    display: flex
+    &-message 
+        text-align: justify
+        border-top: 1px solid $orangeColor
+        padding: 15px
+        font-size: 12px
+        color: #aaa
+    &-icon 
+        width: 4%
+        font-size: 20px
+        padding: 10px
+    &-details
+        padding: 10px
+    &-content 
+        padding: 15px 0 15px 0
+    &-title
+        font-family: kylets
+        font-size: 25px
+    &-button 
+        +transition
+        padding: 10px
+        margin: 5px
+        font-family: cd
+        font-size: 15px
+        background: $darkColor1
+        color: $lightColor1
+        border: 1px solid $darkColor1
+        border-radius: 5px
+        &:hover 
+            background: $orangeColor
+            color: $darkColor1 
+            border-radius: 10px
+            border: 1px solid $orangeColor
